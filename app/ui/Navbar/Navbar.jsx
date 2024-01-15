@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import NavLinks from './nav-links'
+
 import { FaAngleRight, FaSquareXmark } from "react-icons/fa6";
 import { useState, useEffect } from 'react';
 
@@ -13,6 +13,7 @@ const Navbar = () => {
 
     const headerBtnClick = () => {
         setMenuActive(!isMenuActive);
+        serviceCloseClick();
     };
 
     const serviceLinkClick = () => {
@@ -22,10 +23,6 @@ const Navbar = () => {
 
     const serviceCloseClick = () => {
         setServicesMenuActive(false);
-    };
-
-    const listItemClick = () => {
-        setMenuActive(false);
     };
 
     const handleScroll = () => {
@@ -70,10 +67,19 @@ const Navbar = () => {
                                 Services
                             </span>
                         </li>
-                        <NavLinks onItemClick={listItemClick} />
+                        <li className='list-item' onClick={serviceCloseClick}>
+                            <Link href='/projects' title='Projects created by Neotet - Digital Agency' >Projects</Link>
+                        </li>
+                        <li className="list-item" onClick={serviceCloseClick}>
+                            <Link href='/process' title='Learn more about the process, and how we work with our clients of our company, Neotet - Digital Agency'>Process</Link>
+
+                        </li>
+                        <li className="list-item" onClick={serviceCloseClick}>
+                            <Link href='/about' title='Learn more about our company, Neotet - Digital Agency'>About</Link>
+                        </li>
                     </ul>
 
-                    <Link href="/contact" title="Contact with Agency, Neotet - Digital Agency" className="btn contact-btn header__button">
+                    <Link href="/contact" title="Contact with Agency, Neotet - Digital Agency" className="btn contact-btn header__button" onClick={serviceCloseClick}>
                         <div className="text">Contact Us</div>
                         <span className="icon">
                             <FaAngleRight />
