@@ -68,7 +68,7 @@ export default function Home() {
                   At Neotet, we don't just build websites, we craft immersive digital experiences that resonate with your audience. Our website design and development services are a fusion of creativity, technology, and strategic thinking. We are not just in the business of coding; we are in the business of turning dreams into digital reality.
                 </main>
                 <button>
-                  <Link href="#" className="btn"><div className="text">Read More </div><span className="icon"><FaAngleRight /></span></Link>
+                  <Link href="/services/websites" className="btn"><div className="text">Read More </div><span className="icon"><FaAngleRight /></span></Link>
                 </button>
               </li>
               <li className="service">
@@ -79,18 +79,18 @@ export default function Home() {
                   At Neotet, we're architects of dynamic and functional web applications. Our team specializes in transforming your business processes and ideas into seamless, interactive digital solutions.
                 </main>
                 <button>
-                  <Link href="#" className="btn"><div className="text">Read More </div><span className="icon"><FaAngleRight /></span></Link>
+                  <Link href="/services/webapps" className="btn"><div className="text">Read More </div><span className="icon"><FaAngleRight /></span></Link>
                 </button>
               </li>
               <li className="service">
                 <header className="service-title">
-                  <h2>03. SEO & Marketing</h2>
+                  <h2>03. SEO & SMM</h2>
                 </header>
                 <main className="service-body">
                   At Neotet, we understand that a stunning digital presence is only effective when it's seen by the right audience. That's where our expertise in SEO (Search Engine Optimization) and marketing comes into play – to elevate your brand, drive organic traffic, and foster meaningful connections with your target audience.
                 </main>
                 <button>
-                  <Link href="#" className="btn"><div className="text">Read More </div><span className="icon"><FaAngleRight /></span></Link>
+                  <Link href="/services/SMM" className="btn"><div className="text">Read More </div><span className="icon"><FaAngleRight /></span></Link>
                 </button>
               </li>
               <li className="service">
@@ -101,7 +101,7 @@ export default function Home() {
                   At Neotet, we specialize in bringing your business online with seamless and tailored E-Commerce solutions. Our team crafts personalized online shops that not only showcase your products but elevate your entire digital retail experience. From user-centric design to secure transactions, we're here to turn your vision into a thriving online store.
                 </main>
                 <button>
-                  <Link href="#" className="btn"><div className="text">Read More</div> <span className="icon"><FaAngleRight /></span></Link>
+                  <Link href="/services/ecommerce" className="btn"><div className="text">Read More</div> <span className="icon"><FaAngleRight /></span></Link>
                 </button>
               </li>
             </ul>

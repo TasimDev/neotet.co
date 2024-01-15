@@ -1,3 +1,4 @@
+import Link from "next/link"
 import FooterLink from "./footer-link"
 
 
@@ -14,22 +15,22 @@ const Footer = () => {
                     <ul className="footer-list">
                         <li className="services">
                             <header><h2>Services</h2></header>
-                            <a href="#">Websites</a>
-                            <a href="#">Web Apps</a>
-                            <a href="#">E-Commerce</a>
-                            <a href="#">Social Media Marketing</a>
+                            <Link href="/services/websites">Websites</Link>
+                            <Link href="/services/webapps">Web Apps</Link>
+                            <Link href="/services/e-commerce">E-Commerce</Link>
+                            <Link href="/services/SMM">Social Media Marketing</Link>
                         </li>
                         <li className="about">
                             <header><h2>Neotet</h2></header>
-                            <a href="#">About</a>
-                            <a href="#">Our Team</a>
-                            <a href="#">Careers</a>
-                            <a href="#">Contact us</a>
+                            <Link href="/about">About</Link>
+                            <Link href="/about">Our Team</Link>
+                            <Link href="/contact">Careers</Link>
+                            <Link href="/contact">Contact us</Link>
                         </li>
                         <li className="contact">
                             <header><h2>Find us</h2></header>
                             <div className="email">
-                                <a href="mailto:neotet.co@gmail.com">hello@neotet.co</a>
+                                <Link href="mailto:neotet.co@gmail.com">hello@neotet.co</Link>
                             </div>
                             <div className="place">
                                 <p> Ruse, Bulgaria </p>

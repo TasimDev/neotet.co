@@ -118,10 +118,10 @@ const Navbar = () => {
                             <p>Supercharge your digital presence with our digital services.</p>
                         </header>
                         <ul>
-                            <li><Link href="/" title="Learn more about Service - Website Development & Design, HTML, CSS, JS, Wordpress, Webflow, Neotet - Digital Agency." onClick={serviceCloseClick}>Websites</Link></li>
-                            <li><Link href="/" title="Learn more about Service - Web Application Development, SaaS, Software Deveopment for Bussenes, Neotet - Digital Agency." onClick={serviceCloseClick}>Web Apps</Link></li>
-                            <li><Link href="/" title="Learn more about Service - E-Commerce, Online Shop Development, Shopify, WooCommerce, Neotet - Digital Agency." onClick={serviceCloseClick}>E-Commerce</Link></li>
-                            <li><Link href="/" title="Learn more about Service - SMMA(Social Media Marketing Agency), Neotet - Digital Agency." onClick={serviceCloseClick}>Social Media Marketing</Link></li>
+                            <li><Link href="/services/websites" title="Learn more about Service - Website Development & Design, HTML, CSS, JS, Wordpress, Webflow, Neotet - Digital Agency." onClick={serviceCloseClick}>Websites</Link></li>
+                            <li><Link href="/services/webapps" title="Learn more about Service - Web Application Development, SaaS, Software Deveopment for Bussenes, Neotet - Digital Agency." onClick={serviceCloseClick}>Web Apps</Link></li>
+                            <li><Link href="/services/ecommerce" title="Learn more about Service - E-Commerce, Online Shop Development, Shopify, WooCommerce, Neotet - Digital Agency." onClick={serviceCloseClick}>E-Commerce</Link></li>
+                            <li><Link href="/services/SMM" title="Learn more about Service - SMMA(Social Media Marketing Agency), Neotet - Digital Agency." onClick={serviceCloseClick}>Social Media Marketing</Link></li>
                         </ul>
                     </div>
                 </div>
