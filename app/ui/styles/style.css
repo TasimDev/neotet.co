@@ -302,7 +302,7 @@ button {
   z-index: 4;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   transition: all 0.3s ease-in-out;
@@ -919,6 +919,140 @@ button {
   font-weight: 300;
 }
 
+.service {
+  overflow: hidden;
+}
+.service .service-header {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+.service .service-header .container {
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+}
+.service .service-header .container .service-title {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 5rem;
+}
+.service .service-header .container .service-title h2 {
+  font-size: 3rem;
+  font-family: var(--header-font);
+}
+.service .service-header .container .service-title p {
+  width: 80%;
+  text-align: justify;
+}
+.service .service-header .image {
+  position: absolute;
+  width: 50%;
+  right: 0;
+}
+.service .service-types {
+  z-index: 2;
+  padding: 1rem 0rem;
+  background: rgb(149, 255, 124);
+  background: linear-gradient(180deg, rgb(149, 255, 124) 0%, rgb(240, 241, 0) 100%);
+}
+.service .service-types ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 6rem;
+  animation: animate 200s linear infinite;
+}
+.service .service-types ul li {
+  list-style: disc;
+  text-wrap: nowrap;
+}
+@keyframes animate {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translate(-600%);
+  }
+}
+.service .service-quote {
+  padding: 6rem 0rem;
+  border-bottom: 1px solid rgb(218, 218, 218);
+}
+.service .service-quote .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.service .service-quote .container p {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.service .service-quote .container a {
+  color: rgb(17, 17, 17);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.service .service-quote.projects {
+  padding: 10rem 0rem;
+  background: rgb(149, 255, 124);
+  background: linear-gradient(180deg, rgb(149, 255, 124) 0%, rgb(240, 241, 0) 100%);
+}
+.service .service-quote.projects p {
+  width: 50%;
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: var(--header-font);
+}
+.service .service-info {
+  padding: 6rem 0rem;
+  border-bottom: 1px solid rgb(218, 218, 218);
+}
+.service .service-info .container {
+  display: flex;
+}
+.service .service-info .container .service-info-title {
+  width: 50%;
+  height: auto;
+  font-size: 1.5rem;
+}
+.service .service-info .container .info {
+  width: 50%;
+}
+.service .service-info .container .info .service-info-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.service .service-info .container .info .service-info-list .service-info-list-item {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.service .service-info .container .info .service-info-list .service-info-list-item .info-title {
+  padding: 0;
+  height: auto;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.service .service-info .container .info .service-info-list .service-info-list-item .info-body {
+  padding: 0;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.service .service-info .container .info .service-info-list .service-info-list-item .info-body a {
+  color: rgb(17, 17, 17);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
 /*==============HEADER=============*/
 #footer {
   background: rgb(17, 17, 17);
@@ -1078,6 +1212,19 @@ button {
   #service-menu .wrapper {
     width: 100%;
   }
+  .service .service-info .container {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .service .service-info .container .service-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .service .service-info .container .info {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 900px) {
   #about .container p {
@@ -1164,6 +1311,29 @@ button {
   }
   #contact-page #contact-names .container .second header a {
     font-size: 1.5rem;
+  }
+  .service .service-header .container .service-title {
+    width: 100%;
+    color: #fff;
+  }
+  .service .service-header .container .service-title p {
+    width: 100%;
+  }
+  .service .service-header .image {
+    width: 100%;
+    height: 100%;
+  }
+  .service .service-types ul {
+    animation: animate 100s linear infinite;
+  }
+  .service .service-quote .container p {
+    font-size: 1.5rem;
+  }
+  .service .service-quote.projects p {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: var(--header-font);
   }
 }
 @media screen and (max-width: 600px) {
@@ -1258,6 +1428,29 @@ button {
     padding: 1.1rem 0;
     width: 100%;
     font-size: 2.3rem;
+  }
+  .service .service-info .container {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .service .service-info .container .service-info-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .service .service-info .container .info {
+    width: 100%;
+  }
+  .service .service-info .container .info .service-info-list {
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+  .service .service-info .container .info .service-info-list .service-info-list-item {
+    width: 90%;
+    text-align: justify;
   }
 }
 /* 

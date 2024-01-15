@@ -111,6 +111,23 @@
             width: 100%;
         }
     }
+    .service{
+        .service-info{
+            .container{
+                flex-direction: column;
+                gap: 5rem;
+                .service-title{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .info{
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 900px){
     #about{
@@ -241,8 +258,47 @@
                     }
                 }
             }
-        
-    
+    }
+    .service{
+        .service-header{
+            .container{
+                .service-title{
+                    width: 100%;
+                    color: color(white);
+                    p{
+                        width: 100%;
+                    }
+                }
+            }
+            .image{
+                
+                width: 100%;
+                height: 100%;
+             
+                
+            }
+        }
+        .service-types{
+            ul{
+                animation: animate 100s linear infinite;
+            }
+        }
+        .service-quote{
+            .container{
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+            &.projects{
+              
+                p{  
+                    width: 100%;
+                    font-size: 2rem;
+                    font-weight: 700;
+                    font-family: var(--header-font);
+                }
+            }
+        }
     }
     
 }
@@ -389,6 +445,34 @@
                     padding: 1.1rem 0;
                     width: 100%;
                     font-size: 2.3rem;
+                }
+            }
+        }
+    }
+    .service{
+        .service-info{
+            .container{
+                flex-direction: column;
+                gap: 5rem;
+                .service-info-title{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                }
+                .info{
+                    width: 100%;
+                    .service-info-list{
+                        align-items: center;
+                        justify-content: center;
+                        gap: 3rem;
+                        .service-info-list-item{
+                            width: 90%;
+                           text-align: justify;
+                           
+                        }
+                    }
                 }
             }
         }

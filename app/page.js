@@ -101,7 +101,7 @@ export default function Home() {
                   At Neotet, we specialize in bringing your business online with seamless and tailored E-Commerce solutions. Our team crafts personalized online shops that not only showcase your products but elevate your entire digital retail experience. From user-centric design to secure transactions, we're here to turn your vision into a thriving online store.
                 </main>
                 <button>
-                  <Link href="/services/ecommerce" className="btn"><div className="text">Read More</div> <span className="icon"><FaAngleRight /></span></Link>
+                  <Link href="/services/e-commerce" className="btn"><div className="text">Read More</div> <span className="icon"><FaAngleRight /></span></Link>
                 </button>
               </li>
             </ul>
