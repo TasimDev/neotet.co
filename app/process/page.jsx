@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import { FaAngleRight } from "react-icons/fa";
 
 export default function Page() {
     return <>
@@ -21,7 +23,13 @@ export default function Page() {
                         </p>
                     </div>
                     <div className="image">
-                        <img src="/team/krakenimages-Y5bvRlcCx8k-unsplash.jpg" alt="developer/img" />
+                        <Image
+                            src="/team/test-proccess-1.jpg"
+                            alt="Description of the image"
+                            className="image-profile"
+                            width={1100}
+                            height={500}
+                        />
                     </div>
                 </div>
             </div>
@@ -93,6 +101,22 @@ export default function Page() {
                         </div>
                     </div>
                 </div>
+            </div>
+
+        </section>
+        <section id="contact">
+            <div className="container">
+                <div className="wrapper">
+                    <header>
+                        <h3>Let us take your business
+                            further than it has ever been.
+                        </h3>
+                    </header>
+
+                    <Link href="/contact" className="btn contact-btn"><div className="text">Contact Us</div> <span className="icon"> <FaAngleRight /></span></Link>
+
+                </div>
+
             </div>
         </section>
     </>;
