@@ -68,14 +68,14 @@ const Navbar = () => {
                             </span>
                         </li>
                         <li className='list-item' onClick={serviceCloseClick}>
-                            <Link href='/projects' title='Projects created by Neotet - Digital Agency' >Projects</Link>
+                            <Link href='/projects' title='Projects created by Neotet - Digital Agency' className='links'>Projects</Link>
                         </li>
                         <li className="list-item" onClick={serviceCloseClick}>
-                            <Link href='/process' title='Learn more about the process, and how we work with our clients of our company, Neotet - Digital Agency'>Process</Link>
+                            <Link href='/process' title='Learn more about the process, and how we work with our clients of our company, Neotet - Digital Agency' className='links'>Process</Link>
 
                         </li>
                         <li className="list-item" onClick={serviceCloseClick}>
-                            <Link href='/about' title='Learn more about our company, Neotet - Digital Agency'>About</Link>
+                            <Link href='/about' title='Learn more about our company, Neotet - Digital Agency' className='links'>About</Link>
                         </li>
                     </ul>
 
