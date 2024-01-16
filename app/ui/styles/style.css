@@ -986,6 +986,8 @@ button {
 .service .service-types ul li {
   list-style: disc;
   text-wrap: nowrap;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 @keyframes animate {
   0% {

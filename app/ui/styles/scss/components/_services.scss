@@ -55,7 +55,8 @@
             animation: animate 200s linear infinite;
            li{
             list-style: disc;
-           text-wrap: nowrap;
+            text-wrap: nowrap;
+            width: fit-content;
            }
            @keyframes animate {
             0% {
