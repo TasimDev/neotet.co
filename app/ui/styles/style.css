@@ -934,7 +934,7 @@ button {
   overflow: hidden;
 }
 .service .service-header {
-  height: 100vh;
+  height: 100vmin;
   position: relative;
   display: flex;
   overflow: hidden;
@@ -962,7 +962,13 @@ button {
 .service .service-header .image {
   position: absolute;
   width: 50%;
+  height: 100%;
   right: 0;
+  top: 0;
+}
+.service .service-header .image img {
+  width: 100%;
+  height: 100%;
 }
 .service .service-types {
   z-index: 2;
@@ -1322,6 +1328,9 @@ button {
   }
   #contact-page #contact-names .container .second header a {
     font-size: 1.5rem;
+  }
+  .service .service-header {
+    height: 100vh;
   }
   .service .service-header .container .service-title {
     width: 100%;

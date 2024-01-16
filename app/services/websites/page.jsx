@@ -16,8 +16,7 @@ export default function Page() {
                     <Image
                         src='/websites-service.jpg'
                         alt="Website&Debelopment Image"
-                        width={2000}
-                        height={1000}
+                        layout='fill'
                     />
                 </div>
             </header>
