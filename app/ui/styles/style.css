@@ -986,6 +986,7 @@ button {
 .service .service-types ul li {
   list-style: disc;
   text-wrap: nowrap;
+  white-space: nowrap;
 }
 @keyframes animate {
   0% {
