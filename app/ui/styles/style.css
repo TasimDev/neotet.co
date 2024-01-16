@@ -27,6 +27,17 @@ body {
   color: var(--text-color);
   overflow-x: hidden;
 }
+body::-webkit-scrollbar-track {
+  width: 0px;
+  background-color: transparent;
+}
+body::-webkit-scrollbar {
+  width: 0px;
+  background-color: #F5F5F5;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
 
 a {
   text-decoration: none;

@@ -9,6 +9,24 @@ body {
     background-color: var(--body-color);
     color: var(--text-color);
     overflow-x: hidden;
+   &::-webkit-scrollbar-track
+{
+    width: 0px;
+	background-color: transparent;
+}
+
+&::-webkit-scrollbar
+{
+	width: 0px;
+	background-color: #F5F5F5;
+}
+
+&::-webkit-scrollbar-thumb
+{
+	background-color: transparent;
+	
+}
+
 }
 
 a {
