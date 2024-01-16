@@ -190,7 +190,7 @@ button {
   width: 25%;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
 }
 .header__logo span {
   font-weight: 800;
@@ -279,7 +279,7 @@ button {
   right: 0;
   display: none;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   padding: 6rem 0;
   gap: 2rem;
   transform: translateY(-200%);
@@ -1081,7 +1081,7 @@ button {
 #footer .footer__container {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   gap: 3rem;
 }
 #footer .footer__top {
@@ -1261,7 +1261,7 @@ button {
   }
   #services .container main ul li {
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     justify-content: center;
     gap: 2rem;
   }
@@ -1374,8 +1374,8 @@ button {
     background-position: top;
   }
   #about .container {
-    justify-content: start;
-    align-items: start;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
   #about .container p {
     text-align: left;
